@@ -1,0 +1,24 @@
+[
+  {
+  "name" : "NameHere",
+  "cprNumber": "12345678",
+  "address" : "address here",
+  "phoneNumber": 22542263,
+  "email": "email@email.com",
+  "nationality": "american",
+  "countryOfResidence": "Denmark",
+  "username": "test username",
+  "password": "test password"
+ },
+  {
+    "name" : "NameTwoHere",
+    "cprNumber": "78994422",
+    "address" : "address two here",
+    "phoneNumber": 32875643,
+    "email": "secondemail@email.com",
+    "nationality": "hungarian",
+    "countryOfResidence": "Denmark",
+    "username": "second username",
+    "password": "second password"
+  }
+]
