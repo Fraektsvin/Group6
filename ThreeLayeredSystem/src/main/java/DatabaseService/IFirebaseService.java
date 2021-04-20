@@ -1,6 +1,6 @@
 package DatabaseService;
 
-import Webservice.User;
+import Webservice.Model.User;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
