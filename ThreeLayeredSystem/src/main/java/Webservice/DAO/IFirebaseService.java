@@ -1,4 +1,4 @@
-package DatabaseService;
+package Webservice.DAO;
 
 import Webservice.Model.User;
 import org.springframework.stereotype.Component;
@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutionException;
 
 @Service
 @Component
-public interface IFirebaseService {
+public interface    IFirebaseService {
     String saveUserDetails(User user) throws InterruptedException, ExecutionException;
     User getUserDetails(String name) throws InterruptedException, ExecutionException;
 

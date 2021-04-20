@@ -1,24 +1,39 @@
 package Webservice.usercontroller;
 
+import Webservice.DAO.IFirebaseService;
 import Webservice.Pesistence.UserService;
 import Webservice.Model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.google.firebase.FirebaseApp;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.concurrent.ExecutionException;
 
 
 @RestController
-@RequestMapping("/users")
 public class UserController {
+
     @Autowired
-    UserService userService;
+    private IFirebaseService firebaseService;
 
-    @GetMapping("/all")
-    public User getAllUsers(){
-        return (User) userService.getAllUsers();
+    @GetMapping("/getUserDetails")
+    public User getUserDetails(@RequestHeader String name) throws InterruptedException, ExecutionException {
+        return firebaseService.getUserDetails(name);
     }
-
-    @PostMapping("")
-    public void createUser(@RequestBody User newUser){
-        userService.createUser(newUser);
+    @PostMapping("/createNewUser")
+    public String  createNewUser(@RequestBody User user) throws ExecutionException, InterruptedException {
+        return firebaseService.saveUserDetails(user);
+    }
+    @DeleteMapping("/deleteUser")
+    public String deleteUser(@RequestHeader String name)throws ExecutionException, InterruptedException {
+        return firebaseService.deleteUser(name);
+    }
+    @PutMapping("/updateUser")
+    public String updateUser(@RequestBody User user) throws ExecutionException, InterruptedException{
+        return firebaseService.updateUserDetails(user);
     }
 }

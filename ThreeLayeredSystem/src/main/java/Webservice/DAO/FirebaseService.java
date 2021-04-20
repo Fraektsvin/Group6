@@ -1,5 +1,6 @@
-package DatabaseService;
+package Webservice.DAO;
 
+import Webservice.DAO.IFirebaseService;
 import Webservice.Model.User;
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.DocumentReference;
