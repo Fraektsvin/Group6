@@ -1,7 +1,8 @@
 ﻿@page "/NewUser"
-@using Blazor.code.persistence
 @using Blazor.Models
+@using Blazor.Data
 @inject NavigationManager NavigationManager
+@inject IUserService service
 
 
 <h1>Adding</h1>
@@ -67,8 +68,9 @@
 @code {
     private User newCustomer = new User(); 
     
-    private void RegisterUser() {
-       // Adult.addData(addAdult);
+    private void RegisterUser()
+    {
+        service.AddUser(newCustomer);
     }
 
   
