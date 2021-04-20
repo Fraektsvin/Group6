@@ -10,8 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Blazored.LocalStorage;
-using FileData;
-using Blazor.code.persistence;
 
 namespace Blazor
 {
