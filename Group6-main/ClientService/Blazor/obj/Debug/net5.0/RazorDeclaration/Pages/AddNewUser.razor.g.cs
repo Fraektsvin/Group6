@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Blazor.Shared
+namespace Blazor.Pages
 {
     #line hidden
     using System;
@@ -90,13 +90,21 @@ using Blazored.LocalStorage;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\HP\SEP3\Group6\Group6-main\ClientService\Blazor\Shared\MainLayout.razor"
-using Models;
+#line 2 "C:\Users\HP\SEP3\Group6\Group6-main\ClientService\Blazor\Pages\AddNewUser.razor"
+using Blazor.code.persistence;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+#nullable restore
+#line 3 "C:\Users\HP\SEP3\Group6\Group6-main\ClientService\Blazor\Pages\AddNewUser.razor"
+using Blazor.Models;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/NewUser")]
+    public partial class AddNewUser : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,25 +112,21 @@ using Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\HP\SEP3\Group6\Group6-main\ClientService\Blazor\Shared\MainLayout.razor"
-      
-
-    [CascadingParameter] protected Task<AuthenticationState> AuthStat { get; set; }
-
-    protected async override Task OnInitializedAsync()
-    {
-        base.OnInitialized();
-        var user = (await AuthStat).User;
-        if (!user.Identity.IsAuthenticated)
-        {
-            NavMgr.NavigateTo($"/Login");
-        }
+#line 67 "C:\Users\HP\SEP3\Group6\Group6-main\ClientService\Blazor\Pages\AddNewUser.razor"
+       
+    private User newCustomer = new User(); 
+    
+    private void RegisterUser() {
+       // Adult.addData(addAdult);
     }
+
+  
+ 
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavMgr { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

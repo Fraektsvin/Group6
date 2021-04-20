@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\SEP3\\Group6-main\\ClientService\\Blazor\\Blazor.csproj": {}
+    "C:\\Users\\HP\\SEP3\\Group6\\Group6-main\\ClientService\\Blazor\\Blazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\SEP3\\Group6-main\\ClientService\\Blazor\\Blazor.csproj": {
+    "C:\\Users\\HP\\SEP3\\Group6\\Group6-main\\ClientService\\Blazor\\Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\SEP3\\Group6-main\\ClientService\\Blazor\\Blazor.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\SEP3\\Group6\\Group6-main\\ClientService\\Blazor\\Blazor.csproj",
         "projectName": "Blazor",
-        "projectPath": "C:\\Users\\HP\\SEP3\\Group6-main\\ClientService\\Blazor\\Blazor.csproj",
+        "projectPath": "C:\\Users\\HP\\SEP3\\Group6\\Group6-main\\ClientService\\Blazor\\Blazor.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\SEP3\\Group6-main\\ClientService\\Blazor\\obj\\",
+        "outputPath": "C:\\Users\\HP\\SEP3\\Group6\\Group6-main\\ClientService\\Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
